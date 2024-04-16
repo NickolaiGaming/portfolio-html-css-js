@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Carlos Eduardo Tabare</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Carlos Eduardo Tabare</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onClick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onClick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onClick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onClick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Diseño sin título.png" alt="Carlos Tabare profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Carlos Eduardo Tabare</h1>
+            <p class="section__text__p2">Full Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile"
+                class="icon-perfil" onclick="window.open(
+                    'https://www.linkedin.com/in/nickolaitabare/',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"/>  
+                <img src="./assets/github.png" alt="My github profile"
+                class="icon-perfil" onclick="window.open(
+                    'https://github.com/NickolaiGaming',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"/> 
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <p class="title">About Me</p>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/diseño 3.png"
+                 alt="Profil Picture"
+                 class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon"
+                        class="icon"/>
+                        <h3>Experience</h3>
+                        <p>Academy Projects</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p>Bachelors Degree <br>Full Stack Software Development FT</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>During my studies at 4Geeks Academy Chile, I acquired a strong foundation in coding, encompassing both frontend and backend development. While I find frontend work enjoyable, my true passion lies in backend development, and I am eager to further enhance my proficiency in this area.
+
+                        One of my greatest attributes is my meticulous approach to problem-solving. I'm always willing to research and explore different methods to find the optimal solution. My patience and thirst for knowledge constantly drive me to learn and grow in my field.
+                        
+                        Outside of my academic pursuits, I dedicate time to personal projects. Presently, I am focused on delving deeper into Ecommerce development and refining my previous projects within this domain. I am steadfast in my commitment to continual improvement and am excited to contribute to innovative endeavors.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>JasvaScript</h3>
+                               
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>React</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Bootstrap</h3>
+                                
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Flask</h3>
+                               
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>SQL</h3>
+                                
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/tictactoe.png" 
+                    alt="Project 1"
+                    class="project-img"
+                    >
+                </div>
+                <h2 class="experience-sub-title project-title">Tic-Tac-Toe</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open(
+                        'https://github.com/NickolaiGaming/Tic-Tac-Toe',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                    >
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open(
+                        'https://tic-tac-toe-two-plum.vercel.app/',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/blog starwars.png" 
+                    alt="Project 1"
+                    class="project-img"
+                    >
+                </div>
+                <h2 class="experience-sub-title project-title">Starwars Blog</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open(
+                        'https://github.com/NickolaiGaming/Blog-Starwars',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                    >
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open(
+                        'https://blog-starwars.vercel.app/',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/sorting cards.png" 
+                    alt="Project 1"
+                    class="project-img"
+                    >
+                </div>
+                <h2 class="experience-sub-title project-title">Sorting Cards: Select Method</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open(
+                        'https://github.com/NickolaiGaming/OrdenadorCartasMetodoSelect',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                    >
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open(
+                        'https://sorting-cards-proyect-select-method.vercel.app/',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+          
+            
+            
+        </div>
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/to do list.png" 
+                    alt="Project 1"
+                    class="project-img"
+                    >
+                </div>
+                <h2 class="experience-sub-title project-title">To Do List</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open(
+                        'https://github.com/NickolaiGaming/To-Do-List',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                    >
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open(
+                        'https://to-do-list-pink-five.vercel.app/',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/card generator.png" 
+                    alt="Project 1"
+                    class="project-img"
+                    >
+                </div>
+                <h2 class="experience-sub-title project-title">Card Generator</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open(
+                        'https://github.com/NickolaiGaming/GeneradorCartas',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                    >
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open(
+                        'https://cards-generator-silk.vercel.app/',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/semaforo.png" 
+                    alt="Project 1"
+                    class="project-img"
+                    >
+                </div>
+                <h2 class="experience-sub-title project-title">Traffic Light</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open(
+                        'https://github.com/NickolaiGaming/Traffic-Light',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                    >
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open(
+                        'https://traffic-light-eosin.vercel.app/',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+          
+            
+            
+        </div>
+            
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" 
+                alt="email icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:carloseduardotabare@gmail.com">Carloseduardotabare@gmail.com</a></p>
+
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" 
+                alt="linkedin icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/nickolaitabare/" target="_blank">LinkedIn</a></p>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+    
+                </ul>
+            </div>
+        </nav>
+<p>2024 Carlos Eduardo Tabare.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
